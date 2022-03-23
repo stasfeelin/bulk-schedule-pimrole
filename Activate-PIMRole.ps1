@@ -54,14 +54,14 @@ While($StartDate -ne $LastDate)
 	$schedule.endDateTime = $schedule.StartDateTime.AddHours(10)
 	try 
 	{
-		Open-AzureADMSPrivilegedRoleAssignmentRequest`
-			-ProviderId 'aadRoles'`
-			-ResourceId $TenantID`
-			-RoleDefinitionId $role.ObjectId`
-			-SubjectId $user.ObjectId`
-			-Type 'UserAdd'`
-			-AssignmentState'Active'`
-			-schedule $schedule`
+		Open-AzureADMSPrivilegedRoleAssignmentRequest `
+			-ProviderId 'aadRoles' `
+			-ResourceId $TenantID `
+			-RoleDefinitionId $role.ObjectId `
+			-SubjectId $user.ObjectId `
+			-Type 'UserAdd' `
+			-AssignmentState 'Active' `
+			-schedule $schedule `
 			-reason $reason
 	} catch { Write-Warning $_ ; break}
 
