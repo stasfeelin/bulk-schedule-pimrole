@@ -4,4 +4,4 @@ This script was developed to minimize routine process of PIM role activation and
 
 TODO:<br>
 - [ ] move from AzureRM to Az module
-- [ ] Add up to 24 hours for scheduled activasion option
+- [ ] Add up to 24 hours for scheduled activation option
