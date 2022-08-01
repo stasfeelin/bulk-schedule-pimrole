@@ -1,4 +1,6 @@
 # Schedule PIM roles activation in a loop
+Schedule PIM Role Activation with Powershell in bulk.
+
 This script was developed to minimize routine process of PIM role activation and to bypass painfull activation scheduling on azure portal one by one for an allowed number of days.
 
 Basically this script allows you to vialoate Just-In-Time control. Don't overuse it ;)
